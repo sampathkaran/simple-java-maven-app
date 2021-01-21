@@ -19,5 +19,14 @@ pipeline {
       }
     }
 
+    stage('Print-stage') {
+      steps {
+        sh 'echo $NAME'
+      }
+    }
+
+  }
+  environment {
+    NAME = 'SAMPLE'
   }
 }
